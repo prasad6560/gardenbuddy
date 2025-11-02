@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/navigation_planner">
+
+    <fragment
+        android:id="@+id/navigation_planner"
+        android:name="com.simats.gardenbuddy.ui.planner.PlannerFragment"
+        android:label="Planner"
+        tools:layout="@layout/fragment_planner" />
+
+    <fragment
+        android:id="@+id/navigation_tips"
+        android:name="com.simats.gardenbuddy.ui.tips.TipsFragment"
+        android:label="Tips"
+        tools:layout="@layout/fragment_tips" />
+
+    <fragment
+        android:id="@+id/navigation_doubtchat"
+        android:name="com.simats.gardenbuddy.ui.doubtschat.DoubtsChatFragment"
+        android:label="Doubts Chat"
+        tools:layout="@layout/fragment_doubts_chat" />
+
+    <fragment
+        android:id="@+id/navigation_feedback"
+        android:name="com.simats.gardenbuddy.ui.feedback.FeedbackFragment"
+        android:label="Feedback"
+        tools:layout="@layout/fragment_feedback" />
+</navigation>

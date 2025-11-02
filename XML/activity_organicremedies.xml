@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".organicremedies">
+
+    <!-- Styled Title -->
+    <TextView
+        android:id="@+id/textView42"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:gravity="center"
+        android:text="Organic remedies"
+        android:textSize="28sp"
+        android:textStyle="bold|italic"
+        android:textColor="@android:color/holo_green_dark"
+        android:fontFamily="sans-serif-medium"
+        android:letterSpacing="0.1"
+        android:shadowColor="#55000000"
+        android:shadowDx="2"
+        android:shadowDy="2"
+        android:shadowRadius="3"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <!-- Remedy Buttons -->
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/button16"
+        android:layout_width="329dp"
+        android:layout_height="64dp"
+        android:layout_marginTop="40dp"
+        android:background="@drawable/widerectangle1"
+        android:text="Banana Tea"
+        android:textAllCaps="false"
+        android:textSize="20sp"
+        app:layout_constraintTop_toBottomOf="@+id/textView42"
+        app:layout_constraintStart_toStartOf="@+id/textView42"
+        app:layout_constraintEnd_toEndOf="@+id/textView42" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/button24"
+        android:layout_width="329dp"
+        android:layout_height="64dp"
+        android:layout_marginTop="40dp"
+        android:background="@drawable/widerectangle1"
+        android:text="Garlic Infusion"
+        android:textAllCaps="false"
+        android:textSize="20sp"
+        app:layout_constraintTop_toBottomOf="@+id/button16"
+        app:layout_constraintStart_toStartOf="@+id/button16"
+        app:layout_constraintEnd_toEndOf="@+id/button16" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/button25"
+        android:layout_width="329dp"
+        android:layout_height="64dp"
+        android:layout_marginTop="40dp"
+        android:background="@drawable/widerectangle1"
+        android:text="Egg shells"
+        android:textAllCaps="false"
+        android:textSize="20sp"
+        app:layout_constraintTop_toBottomOf="@+id/button24"
+        app:layout_constraintStart_toStartOf="@+id/button24"
+        app:layout_constraintEnd_toEndOf="@+id/button24" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/button26"
+        android:layout_width="329dp"
+        android:layout_height="64dp"
+        android:layout_marginTop="40dp"
+        android:background="@drawable/widerectangle1"
+        android:text="Nettle purin"
+        android:textAllCaps="false"
+        android:textSize="20sp"
+        app:layout_constraintTop_toBottomOf="@+id/button25"
+        app:layout_constraintStart_toStartOf="@+id/button25"
+        app:layout_constraintEnd_toEndOf="@+id/button25" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/button27"
+        android:layout_width="329dp"
+        android:layout_height="64dp"
+        android:layout_marginTop="40dp"
+        android:background="@drawable/widerectangle1"
+        android:text="Fungicide with milk"
+        android:textAllCaps="false"
+        android:textSize="20sp"
+        app:layout_constraintTop_toBottomOf="@+id/button26"
+        app:layout_constraintStart_toStartOf="@+id/button26"
+        app:layout_constraintEnd_toEndOf="@+id/button26" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/button28"
+        android:layout_width="329dp"
+        android:layout_height="64dp"
+        android:layout_marginTop="40dp"
+        android:background="@drawable/widerectangle1"
+        android:text="Lentil Rooting"
+        android:textAllCaps="false"
+        android:textSize="20sp"
+        app:layout_constraintTop_toBottomOf="@+id/button27"
+        app:layout_constraintStart_toStartOf="@+id/button27"
+        app:layout_constraintEnd_toEndOf="@+id/button27" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

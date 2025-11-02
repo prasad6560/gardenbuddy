@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    tools:context=".powderymildew">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/main"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <!-- Title -->
+        <TextView
+            android:id="@+id/textView45"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:padding="12dp"
+            android:text="Powdery mildew"
+            android:textSize="30sp"
+            android:textStyle="bold"
+            android:textColor="@color/matt_green"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5" />
+
+        <!-- Image -->
+        <ImageView
+            android:id="@+id/imageView21"
+            android:layout_width="286dp"
+            android:layout_height="178dp"
+            android:layout_marginTop="8dp"
+            android:scaleType="fitXY"
+            app:layout_constraintTop_toBottomOf="@id/textView45"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:srcCompat="@drawable/powderymildew" />
+
+        <!-- Description -->
+        <TextView
+            android:id="@+id/textView50"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="32dp"
+            android:layout_marginStart="24dp"
+            android:layout_marginEnd="24dp"
+            android:text="• It appears as white or gray powdery spots on the leaves, stems, and flowers of plants. This disease can affect a wide variety of plants, including vegetables, fruits, and even weeds.\n• Mostly occur in vegetables like cucumbers, squash, tomatoes, peas, and beans."
+            android:textSize="18sp"
+            app:layout_constraintTop_toBottomOf="@id/imageView21"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+        <!-- Treatment Header -->
+        <TextView
+            android:id="@+id/textView51"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="Treatment"
+            android:textSize="28sp"
+            android:textStyle="bold"
+            android:textColor="@color/matt_green"
+            app:layout_constraintTop_toBottomOf="@id/textView50"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5" />
+
+        <!-- Treatment Description -->
+        <TextView
+            android:id="@+id/textView52"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_marginStart="24dp"
+            android:layout_marginEnd="24dp"
+            android:text="• Space plants properly and prune overcrowded areas.\n• Water the base of plants to reduce humidity on leaves.\n• Mix 1 tablespoon of baking soda, 1/2 teaspoon of liquid soap, and 1 gallon of water. Spray affected plants weekly.\n• Mix 1 part milk with 2 parts water and apply to infected plants."
+            android:textSize="18sp"
+            app:layout_constraintTop_toBottomOf="@id/textView51"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

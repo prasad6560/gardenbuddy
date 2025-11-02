@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F5FFF5"
+    tools:context=".aphids">
+
+    <!-- Scrollable Container -->
+    <ScrollView
+        android:id="@+id/scrollView"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:fillViewport="true"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingTop="16dp"
+            android:paddingBottom="16dp"
+            android:paddingStart="24dp"
+            android:paddingEnd="16dp">
+
+            <!-- Title -->
+            <TextView
+                android:id="@+id/textView45"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp"
+                android:layout_marginBottom="12dp"
+                android:text="APHIDS"
+                android:textSize="30sp"
+                android:textStyle="bold"
+                android:textColor="#2E7D32"
+                android:textAllCaps="true"
+                android:gravity="center" />
+
+            <!-- Aphids Image -->
+            <ImageView
+                android:id="@+id/imageView21"
+                android:layout_width="match_parent"
+                android:layout_height="220dp"
+                android:layout_marginBottom="16dp"
+                android:layout_marginTop="8dp"
+                android:scaleType="fitXY"
+                app:srcCompat="@drawable/aphids" />
+
+            <!-- Description -->
+            <TextView
+                android:id="@+id/textView50"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:layout_marginBottom="12dp"
+                android:text="• Aphids are small, sap-sucking insects that can cause significant damage to plants directly and indirectly.\n\n• Growing the same crop or plant species in a concentrated area makes it easier for aphids to spread.\n\n• Aphids attack a wide variety of plants, including tomatoes, peppers, cabbage, cucumbers, and beans."
+                android:textSize="17sp"
+                android:textColor="#444444" />
+
+            <!-- Treatment Title -->
+            <TextView
+                android:id="@+id/textView51"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp"
+                android:layout_marginBottom="12dp"
+                android:text="TREATMENT"
+                android:textSize="22sp"
+                android:textStyle="bold"
+                android:textColor="#1B5E20"
+                android:textAllCaps="true"
+                android:gravity="center" />
+
+            <!-- Treatment Info -->
+            <TextView
+                android:id="@+id/textView52"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="16dp"
+                android:text="• Spray plants with a strong jet of water to dislodge aphids.\n\n• Rotate crops and maintain proper spacing to improve air circulation.\n\n• Use insecticidal soaps or neem oil to smother aphids."
+                android:textSize="17sp"
+                android:textColor="#444444" />
+
+        </LinearLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

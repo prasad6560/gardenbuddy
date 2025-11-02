@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="dark_green">#256724</color>
+    <color name="light_green">#DFFFD6</color>  <!-- Soft Light Green -->
+    <color name="mint_green">#A8E6CF</color>   <!-- Mint Green -->
+    <color name="lime_green">#C8E6C9</color>
+    <color name="matt_green">#37A949</color>
+    <!-- Light Lime Green -->
+
+</resources>

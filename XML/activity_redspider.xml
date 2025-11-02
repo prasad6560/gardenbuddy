@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".redspider"
+    android:background="@android:color/white">
+
+    <!-- Custom Header Title -->
+    <TextView
+        android:id="@+id/textView45"
+        android:layout_width="0dp"
+        android:layout_height="75dp"
+        android:gravity="center"
+        android:background="@color/matt_green"
+        android:text="🌿 Red Spider Disease"
+        android:textColor="@android:color/white"
+        android:textSize="28sp"
+        android:textStyle="bold|italic"
+        android:fontFamily="sans-serif-medium"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <!-- Image of Disease -->
+    <ImageView
+        android:id="@+id/imageView21"
+        android:layout_width="0dp"
+        android:layout_height="200dp"
+        android:layout_marginTop="12dp"
+        android:scaleType="fitXY"
+        app:srcCompat="@drawable/redspider"
+        app:layout_constraintTop_toBottomOf="@id/textView45"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <!-- Description Text -->
+    <TextView
+        android:id="@+id/textView50"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:text="• The red spider plant disease refers to damage caused by red spider mites, small arachnids that infect various plants.\n• Commonly affects indoor plants, vegetables like tomatoes, beans."
+        android:textSize="18sp"
+        android:textColor="#444444"
+        app:layout_constraintTop_toBottomOf="@+id/imageView21"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <!-- Treatment Title -->
+    <TextView
+        android:id="@+id/textView51"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="🌱 Treatment"
+        android:textSize="26sp"
+        android:textStyle="bold"
+        android:textColor="#2E7D32"
+        android:fontFamily="serif"
+        app:layout_constraintTop_toBottomOf="@+id/textView50"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <!-- Treatment Instructions -->
+    <TextView
+        android:id="@+id/textView52"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:text="• Regularly inspect plants for signs like yellowing leaves, fine webbing, or stippling.\n• Quarantine infested plants to prevent the spread.\n• Wash plants with a strong jet of water to dislodge mites.\n• Use organic sprays such as neem oil or insecticidal soap."
+        android:textSize="18sp"
+        android:textColor="#444444"
+        app:layout_constraintTop_toBottomOf="@+id/textView51"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/addVegetableLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#FAF6FB"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <!-- All required fields -->
+        <EditText
+            android:id="@+id/etName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Name" />
+
+        <EditText
+            android:id="@+id/etContainerLiters"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Container Liters" />
+
+        <EditText
+            android:id="@+id/etTypeOfSoil"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Type of Soil" />
+
+        <EditText
+            android:id="@+id/etSoilPreparation"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Soil Preparation" />
+
+        <EditText
+            android:id="@+id/etPlanting"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Planting" />
+
+        <EditText
+            android:id="@+id/etWateringSchedule"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Watering Schedule" />
+
+        <EditText
+            android:id="@+id/etNutrients"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Nutrients for Soil" />
+
+        <EditText
+            android:id="@+id/etDisease"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Disease" />
+
+        <EditText
+            android:id="@+id/etHarvestTime"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Harvest Time" />
+
+        <EditText
+            android:id="@+id/etBenefits"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Benefits" />
+
+        <!-- Image selectors -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Container Image" />
+
+        <ImageView
+            android:id="@+id/imgContainer"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:background="#C3FDC3" />
+
+        <Button
+            android:id="@+id/btnPickContainerImage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Pick Container Image" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Soil Image" />
+
+        <ImageView
+            android:id="@+id/imgSoil"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:background="#C3FDC3" />
+
+        <Button
+            android:id="@+id/btnPickSoilImage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Pick Soil Image" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Planting Image" />
+
+        <ImageView
+            android:id="@+id/imgPlanting"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:background="#C3FDC3" />
+
+        <Button
+            android:id="@+id/btnPickPlantingImage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Pick Planting Image" />
+
+        <Button
+            android:id="@+id/btnSubmit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:backgroundTint="#6A4CA4"
+            android:text="Submit"
+            android:textColor="#fff" />
+    </LinearLayout>
+</ScrollView>

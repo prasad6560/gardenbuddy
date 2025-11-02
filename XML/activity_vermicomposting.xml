@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".vermicomposting">
+
+    <!-- Scrollable Content Area -->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <!-- Styled Title -->
+            <TextView
+                android:id="@+id/textView32"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Vermicomposting"
+                android:textSize="32sp"
+                android:textStyle="bold|italic"
+                android:textColor="@android:color/holo_green_dark"
+                android:fontFamily="sans-serif-medium"
+                android:letterSpacing="0.05"
+                android:shadowColor="#55000000"
+                android:shadowDx="2"
+                android:shadowDy="2"
+                android:shadowRadius="3"
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:layout_marginBottom="20dp" />
+
+            <!-- Image -->
+            <ImageView
+                android:id="@+id/imageView16"
+                android:layout_width="match_parent"
+                android:layout_height="268dp"
+                android:scaleType="fitCenter"
+                app:srcCompat="@drawable/vermicompost"
+                android:layout_gravity="center"
+                android:layout_marginBottom="20dp" />
+
+            <!-- Subtitle -->
+            <TextView
+                android:id="@+id/textView33"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Steps for Composting"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:layout_marginBottom="10dp" />
+
+            <!-- Description -->
+            <TextView
+                android:id="@+id/textView34"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="• Prepare the Bin: Choose a ventilated container, line it with newspaper, and add damp bedding like shredded paper or leaves.\n• Add Worms: Introduce red wigglers into the bin (buy from stores).\n• Feed Worms: Provide kitchen scraps like fruit peels, vegetable waste, and eggshells (avoid meat, dairy, and oily food).\n• Maintain the Bin: Keep the bin moist, aerated, and in a cool, shaded place; stir occasionally.\n• Harvest Compost: After 2-3 months, separate worms from the compost and collect the nutrient-rich vermicompost."
+                android:textSize="18sp"
+                android:layout_marginBottom="20dp" />
+
+        </LinearLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
