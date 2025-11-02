@@ -1,0 +1,8 @@
+package com.simats.gardenbuddy.ui
+
+data class LoginResponse(
+    val success: Boolean,
+    val message: String,
+    val username: String? = null,
+    val error_code: String? = null
+)
